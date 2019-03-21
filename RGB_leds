@@ -1,0 +1,31 @@
+// Author: KardasR
+
+int Bled = 13;  // blue led pin
+int Gled = 11;  // green led pin
+int Rled = 9;   // red led pin
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(Bled, OUTPUT);    // Activate blue led pin
+  pinMode(Rled, OUTPUT);    // Activate red led pin
+  pinMode(Gled, OUTPUT);    // Activate green led pin
+
+  delay(1000);      // Wait 5000 ms
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(Bled, HIGH);   // Turns on Blue led
+  delay(500);                 // Wait 500 ms
+  digitalWrite(Gled, HIGH);   // Turns on Green led
+  delay(500);                 // Wait 500 ms
+  digitalWrite(Rled, HIGH);   // Turns on Red led
+  delay(500);                 // Wait 500 ms
+  
+  digitalWrite(Bled, LOW);   // Turns on Blue led
+  delay(250);                // Wait 250 ms
+  digitalWrite(Gled, LOW);   // Turns on Green led
+  delay(250);                // Wait 250 ms
+  digitalWrite(Rled, LOW);   // Turns on Red led
+  delay(250);       
+} // end loop
